@@ -7,18 +7,18 @@ class Mesa:
   def __str__(self):
     salida = ''
     for item in self.personas:
-      print(item._total)
-    return 'hola'
+      salida += f'{item}\n'
+    return salida
 
   def obtenerTotal(self) -> float:
     total = 0.0
     for persona in self.personas:
-      total += persona._total
+      total += persona.total()
     
     return total
   
   def addPersona(self, persona:Persona):
-    self.personas.append(Persona)
+    self.personas.append(persona)
   
 
 
