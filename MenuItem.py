@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class MenuItem(ABC):
     @abstractmethod
     def servir(self):
