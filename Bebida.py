@@ -7,6 +7,9 @@ class Bebida(MenuItem):
         self.tamaño = tamaño
         self._precio = precio
 
+    def __str__(self):
+        return f'{self.nombre} - {self._precio}'
+
     def servir(self) -> str:
         return f'El platillo {self.nombre} se esta sirviendo'
 
