@@ -11,7 +11,7 @@ class Bebida(MenuItem):
         return f'{self.nombre} - {self._precio}'
 
     def servir(self) -> str:
-        return f'El platillo {self.nombre} se esta sirviendo'
+        return f'La bebida {self.nombre} se esta sirviendo'
 
     def get_precio(self):
         return self.tamaño * self._precio
